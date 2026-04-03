@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "bun --watch src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "knex": "node --import tsx --no-warnings ./node_modules/.bin/knex",
     "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
@@ -15,11 +16,14 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "eslint": "^8.57.0",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   },
   "dependencies": {
+    "dotenv": "^17.4.0",
     "fastify": "^5.8.4",
     "knex": "^3.2.5",
-    "sqlite3": "^6.0.1"
+    "sqlite3": "^6.0.1",
+    "zod": "^4.3.6"
   }
 }
