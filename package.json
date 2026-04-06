@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "knex": "node --import tsx --no-warnings ./node_modules/.bin/knex",
     "lint": "eslint src --ext .ts --fix"
   },
@@ -26,6 +26,7 @@
     "fastify": "^5.8.4",
     "knex": "^3.2.5",
     "sqlite3": "^6.0.1",
+    "vitest": "^4.1.2",
     "zod": "^4.3.6"
   }
 }
