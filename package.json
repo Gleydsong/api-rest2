@@ -8,7 +8,8 @@
     "dev": "bun --watch src/server.ts",
     "test": "vitest",
     "knex": "node --import tsx --no-warnings ./node_modules/.bin/knex",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "build": "tsup src --out-dir build"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "knex": "^3.2.5",
     "sqlite3": "^6.0.1",
     "supertest": "^7.2.2",
+    "tsup": "^8.5.1",
     "vitest": "^4.1.2",
     "zod": "^4.3.6"
   }
